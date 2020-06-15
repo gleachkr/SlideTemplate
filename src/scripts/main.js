@@ -17,8 +17,8 @@ var deck = bespoke.from({ parent: 'article.deck', slides: 'section' }, [
   scale(),
   bullets('.build, .build-items > *:not(.build-items)'),
   hash(),
+  extern(bespoke),
   multimedia(),
-  extern(bespoke)
 ]);
 
 var initialize = new Event('initialize');
